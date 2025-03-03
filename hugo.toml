@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://latenews.netlify.app/'
 languageCode = 'en-US'
 title = 'Late News'
 theme = 'hugo-news'
