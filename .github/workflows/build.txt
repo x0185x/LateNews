@@ -1,0 +1,212 @@
+name: Create Hugo Website
+
+on:
+  workflow_dispatch:  # Manual trigger
+
+permissions:
+  contents: write    # Explicitly set write permissions
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ github.token }}
+
+      - name: Clean repository
+        run: |
+          # Remove everything including .git but keep .github/workflows
+          mkdir -p /tmp/workflow-backup
+          cp -r .github/workflows/* /tmp/workflow-backup/
+          rm -rf .* * || true
+          mkdir -p .github/workflows
+          cp -r /tmp/workflow-backup/* .github/workflows/
+
+      - name: Setup Git
+        run: |
+          git init
+          git config --local user.name "GitHub Actions"
+          git config --local user.email "actions@github.com"
+          git remote add origin "https://${{ github.actor }}:${{ github.token }}@github.com/${{ github.repository }}.git"
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true  # Required for Tailwind CSS
+
+      - name: Create new Hugo site
+        run: |
+          # Create new Hugo site
+          hugo new site . --force
+
+          # Create themes directory and download theme
+          mkdir -p themes/hugo-news
+          cd themes/hugo-news
+          curl -L https://github.com/professionalaf/hugo-news/archive/refs/heads/main.zip -o theme.zip
+          unzip theme.zip
+          mv hugo-news-main/* .
+          rm -rf hugo-news-main theme.zip
+          cd ../..
+
+          # Create hugo.toml configuration
+          cat > hugo.toml << EOL
+          baseURL = '/'
+          languageCode = 'en-US'
+          title = 'Late News'
+          theme = 'hugo-news'
+
+          [taxonomies]
+            category = "categories"
+            tag = "tags"
+            author = "authors"
+
+          [outputs]
+            home = ["HTML", "RSS", "JSON"]
+
+          [[menus.main]]
+          name = "Home"
+          url = "/"
+          weight = 10
+
+          [[menus.main]]
+          name = "Categories"
+          url = "/categories"
+          weight = 20
+
+          [[menus.main]]
+          name = "Tags"
+          url = "/tags"
+          weight = 30
+          EOL
+
+          # Create directory structure
+          mkdir -p content/{articles,authors/news-team,categories}
+
+          # Set current timestamp
+          TIMESTAMP="2025-03-01T23:22:14Z"
+
+          # Create author profile
+          cat > content/authors/news-team/_index.md << EOL
+          ---
+          title: "News Team"
+          bio: "Dedicated team of journalists bringing you the latest breaking news"
+          social:
+            twitter: "latenews"
+            github: "x0185x/amigo"
+          ---
+          EOL
+
+          # Create first article
+          cat > content/articles/tech-advancement.md << EOL
+          ---
+          title: "Breaking News: Technology Advancement in 2025"
+          date: ${TIMESTAMP}
+          author: "News Team"
+          categories: ["Technology"]
+          tags: ["innovation", "tech", "future"]
+          featured_image: "https://picsum.photos/seed/tech/800/400"
+          description: "Latest developments in technology sector reveal groundbreaking innovations"
+          ---
+
+          This is a sample article about technology advancement in 2025.
+          The future is here with amazing innovations and developments.
+
+          ## Key Highlights
+
+          * Artificial Intelligence breakthroughs
+          * Quantum computing developments
+          * New renewable energy solutions
+
+          ## Industry Impact
+
+          The technology sector has seen unprecedented growth in early 2025,
+          with multiple breakthroughs occurring simultaneously across different fields.
+          EOL
+          
+          # Create second article
+          cat > content/articles/climate-initiative.md << EOL
+          ---
+          title: "Global Climate Initiative Launches"
+          date: ${TIMESTAMP}
+          author: "News Team"
+          categories: ["Environment"]
+          tags: ["climate", "sustainability", "global"]
+          featured_image: "https://picsum.photos/seed/climate/800/400"
+          description: "World leaders unite for unprecedented climate action"
+          ---
+
+          World leaders announce new climate initiative.
+          Breakthrough in renewable energy technology shows promising results.
+
+          ## Initiative Details
+
+          * Global cooperation framework
+          * New emission reduction targets
+          * Green technology investments
+
+          ## Expected Impact
+
+          The initiative is expected to accelerate the global transition to
+          renewable energy sources and significantly reduce carbon emissions
+          by 2030.
+          EOL
+
+          # Create static comments for the first article
+          mkdir -p content/articles/tech-advancement
+          mv content/articles/tech-advancement.md content/articles/tech-advancement/index.md
+          cat > content/articles/tech-advancement/comments.json << EOL
+          {
+            "comments": [
+              {
+                "name": "Tech Enthusiast",
+                "content": "This is a fantastic development! Can't wait to see these innovations in action.",
+                "date": "${TIMESTAMP}",
+                "isStatic": true
+              }
+            ]
+          }
+          EOL
+
+      - name: Build Hugo site
+        run: hugo --minify
+
+      - name: Create ZIP file
+        run: |
+          zip -r site.zip public/
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          tag_name: v1.0.0-${{ github.run_number }}
+          release_name: Late News Site Release ${{ github.run_number }}
+          body: |
+            Late News Hugo site release
+            Created at: 2025-03-01 23:22:14 UTC
+            Ready for Netlify deployment
+          draft: false
+          prerelease: false
+
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./site.zip
+          asset_name: site.zip
+          asset_content_type: application/zip
+
+      - name: Commit and Push
+        run: |
+          git add .
+          git commit -m "Create new Hugo site with Hugo News theme and sample content"
+          git branch -M main
+          git push -f origin main
+          

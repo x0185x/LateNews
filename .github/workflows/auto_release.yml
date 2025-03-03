@@ -1,0 +1,62 @@
+on:  
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write    # Explicitly set write permissions
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ github.token }}
+
+      - name: Setup Git
+        run: |
+          git config --local user.name "GitHub Actions"
+          git config --local user.email "actions@github.com"
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true  # Required for Tailwind CSS
+
+      - name: Build Hugo site
+        run: hugo --minify
+
+      - name: Create ZIP file
+        run: |
+          zip -r site.zip public/
+
+      - name: Create Release and Upload Asset
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          # Create release notes
+          cat > release_notes.txt << EOF
+          Updated Late News Hugo site release
+          Triggered by push to main on: ${{ github.event.head_commit.timestamp }}
+          Commit: ${{ github.sha }}
+          Ready for Netlify deployment
+          Created at: 2025-03-03 00:04:59 UTC
+          EOF
+
+          # Create release and upload asset
+          gh release create "v1.0.0-${{ github.run_number }}" \
+            --title "Late News Site Update ${{ github.run_number }}" \
+            --notes-file release_notes.txt \
+            site.zip
+
+      - name: Commit and Push Changes
+        run: |
+          git add .
+          git commit -m "Update Hugo site release ${{ github.run_number }}" || echo "No changes to commit"
+          git push or
+          igin main

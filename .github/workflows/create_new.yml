@@ -1,0 +1,160 @@
+on:
+  workflow_dispatch:  # Manual trigger
+
+permissions:
+  contents: write    # Explicitly set write permissions
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ github.token }}
+
+      - name: Clean repository
+        run: |
+          # Remove everything including .git but keep .github/workflows
+          mkdir -p /tmp/workflow-backup
+          cp -r .github/workflows/* /tmp/workflow-backup/
+          rm -rf .* * || true
+          mkdir -p .github/workflows
+          cp -r /tmp/workflow-backup/* .github/workflows/
+
+      - name: Setup Git
+        run: |
+          git init
+          git config --local user.name "GitHub Actions"
+          git config --local user.email "actions@github.com"
+          git remote add origin "https://${{ github.actor }}:${{ github.token }}@github.com/${{ github.repository }}.git"
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true  # Required for Tailwind CSS
+
+      - name: Create new Hugo site
+        run: |
+          # Create new Hugo site
+          hugo new site . --force
+
+          # Create themes directory and download theme
+          mkdir -p themes/hugo-news
+          cd themes/hugo-news
+          curl -L https://github.com/professionalaf/hugo-news/archive/refs/heads/main.zip -o theme.zip
+          unzip theme.zip
+          mv hugo-news-main/* .
+          rm -rf hugo-news-main theme.zip
+          cd ../..
+
+          # Create hugo.toml configuration with SEO enhancements
+          cat > hugo.toml << EOL
+          baseURL = '/'
+          languageCode = 'en-US'
+          title = 'Late News'
+          theme = 'hugo-news'
+
+          [params]
+            description = "Latest breaking news and updates from around the world."
+            twitterCard = "summary_large_image"
+            schemaType = "NewsMediaOrganization"
+            schemaName = "Late News"
+            schemaUrl = "/"
+
+          [taxonomies]
+            category = "categories"
+            tag = "tags"
+            author = "authors"
+
+          [outputs]
+            home = ["HTML", "RSS", "JSON"]
+
+          [[menus.main]]
+          name = "Home"
+          url = "/"
+          weight = 10
+
+          [[menus.main]]
+          name = "Categories"
+          url = "/categories"
+          weight = 20
+          EOL
+
+          # Create layouts/partials/schema.html for global schema
+          mkdir -p layouts/partials
+          cat > layouts/partials/schema.html << EOL
+          <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "NewsMediaOrganization",
+            "name": "{{ .Site.Title }}",
+            "url": "{{ .Site.BaseURL }}",
+            "description": "{{ .Site.Params.description }}",
+            "publishingPrinciples": "{{ .Site.BaseURL }}about",
+            "@graph": [
+              {
+                "@type": "WebSite",
+                "name": "{{ .Site.Title }}",
+                "url": "{{ .Site.BaseURL }}"
+              }
+            ]
+          }
+          </script>
+          EOL
+
+          # Create directory structure
+          mkdir -p content/{articles,authors,categories}
+
+          # Create example article
+          cat > content/articles/welcome.md << EOL
+          ---
+          title: "Welcome to Late News"
+          date: 2025-03-02T23:56:28Z
+          author: "Editorial Team"
+          categories: ["Announcements"]
+          tags: ["welcome", "news"]
+          featured_image: "https://picsum.photos/seed/welcome/800/400"
+          description: "Welcome to Late News - Your Source for Latest Updates"
+          ---
+          Welcome to Late News, your trusted source for the latest updates and breaking news.
+
+          ## Our Mission
+
+          * Deliver accurate and timely news
+          * Provide in-depth analysis
+          * Maintain journalistic integrity
+
+          Stay tuned for the latest updates and breaking news from around the world.
+          EOL
+
+      - name: Build Hugo site
+        run: hugo --minify
+
+      - name: Create ZIP file
+        run: |
+          zip -r site.zip public/
+
+      - name: Create Release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          # Create release notes
+          echo "Late News Hugo site release" > release_notes.txt
+          echo "Created at: 2025-03-02 23:56:28 UTC" >> release_notes.txt
+          echo "Ready for Netlify deployment" >> release_notes.txt
+
+          # Create release and upload asset
+          gh release create "v1.0.0-${{ github.run_number }}" \
+            --title "Late News Site Release ${{ github.run_number }}" \
+            --notes-file release_notes.txt \
+            site.zip
+
+      - name: Commit and Push
+        run: |
+          git add .
+          git commit -m "Create new Hugo site with Hugo News theme and sample content"
+          git branch -M main
+          git push -f origin main
