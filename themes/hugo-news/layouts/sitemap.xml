@@ -5,25 +5,32 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   {{ range .Data.Pages }}
   <url>
+    {{ if .Permalink }}
     <loc>{{ .Permalink }}</loc>
-    {{ if not .Lastmod.IsZero }}
-    <lastmod>{{ safeHTML ( .Lastmod.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>
     {{ end }}
-    {{ with .Params.featured_image }}
+
+    {{ if not .Lastmod.IsZero }}
+    <lastmod>{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
+    {{ end }}
+
+    {{ if .Params.featured_image }}
     <image:image>
-      <image:loc>{{ . | absURL }}</image:loc>
+      <image:loc>{{ .Params.featured_image | absURL }}</image:loc>
     </image:image>
     {{ end }}
+
     {{ if .IsPage }}
     <news:news>
       <news:publication>
-        <news:name>{{ $.Site.Title }}</news:name>
-        <news:language>{{ $.Site.LanguageCode }}</news:language>
+        <news:name>{{ $.Site.Title | htmlEscape }}</news:name>
+        <news:language>{{ $.Site.LanguageCode | htmlEscape }}</news:language>
       </news:publication>
+      {{ if .Date }}
       <news:publication_date>{{ .Date.Format "2006-01-02T15:04:05-07:00" }}</news:publication_date>
-      <news:title>{{ .Title }}</news:title>
+      {{ end }}
+      <news:title>{{ .Title | htmlEscape }}</news:title>
     </news:news>
     {{ end }}
   </url>
   {{ end }}
-</urlset> 
+</urlset>
