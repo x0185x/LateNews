@@ -1,8 +1,6 @@
 name: Fetch RSS and Commit Articles
 
 on:
-  schedule:
-    - cron: "0 * * * *"  # Runs every hour
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
@@ -25,7 +23,7 @@ jobs:
         run: pip install feedparser html2text
 
       - name: Run RSS script
-        run: python script.py "https://www.theguardian.com/europe/rss" --output "content/articles"
+        run: python script.py "https://www.theguardian.com/uk/rss" --output "content/articles"
 
       - name: Configure Git
         run: |
