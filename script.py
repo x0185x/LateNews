@@ -61,6 +61,11 @@ def create_hugo_article(entry, output_dir):
     featured_image = extract_image_url(content)
     description = re.sub(r'<[^>]+>', '', getattr(entry, 'summary', ''))[:160] + "..."
 
+    # Handle special characters in the description
+    description = description.replace('\\', '\\\\')  # Escape backslashes
+    description = description.replace('"', '\\"')    # Escape double quotes
+    description = description.replace('\n', ' ')     # Replace newlines with spaces
+
     # Save directly inside 'content/articles/'
     filename = slugify(title) + ".md"
     filepath = os.path.join(output_dir, filename)
