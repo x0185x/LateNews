@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Jon Henley Europe correspondent, Luke Harding in Kyiv, Andrew Roth in Washington and Dan Sabbagh"
 categories: ["Uncategorized"]
 tags: ["Ukraine", "France", "UK news", "Russia", "Emmanuel Macron", "Volodymyr Zelenskyy", "Vladimir Putin", "Keir Starmer", "Donald Trump", "Europe", "Politics", "US news", "World news"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/0c77be0c5d1bcc0be65fa5bfc611607b12bd869c/0_288_8620_5172/master/8620.jpg?width=140&quality=85&auto=format&fit=max&s=af33ea7a1197794ebcf8fc4a94a2d296"
 description: "Such a truce would determine whether Putin is ‘acting in good faith’, French foreign minister saysFrance is proposing a partial one-month truce between Russia a..."
 ---
 

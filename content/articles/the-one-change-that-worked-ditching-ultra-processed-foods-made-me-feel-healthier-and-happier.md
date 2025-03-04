@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Lizzie Cernik"
 categories: ["Uncategorized"]
 tags: ["Health & wellbeing", "Nutrition", "Ultra-processed foods", "Food", "Health", "Society"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/7308cbf8d946529d2d64a242c3cac3bfe9f7c696/0_1023_10000_6003/master/10000.jpg?width=140&quality=85&auto=format&fit=max&s=4738ebd2b5e63b60bd5a337b62a0a632"
 description: "After being diagnosed with a chronic digestive disorder, I cut out junk food and ready meals. Now, my diet is full of fruit and veg – and I’ve got my mojo backW..."
 ---
 

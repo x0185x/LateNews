@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Geoffrey Bunting"
 categories: ["Uncategorized"]
 tags: ["Games", "Technology", "Culture", "Surveillance"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/a552a382f7754e546b28383f0f5d240dbae83d45/0_240_3508_2105/master/3508.jpg?width=140&quality=85&auto=format&fit=max&s=ccae0d725a052bdd13e30dbeadcfae69"
 description: "Fifteen years since Microsoft’s motion-sensing gaming camera was released for the Xbox 360, artists, roboticists and more are still finding new ways to use itRe..."
 ---
 

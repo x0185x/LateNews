@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Sean Ingle"
 categories: ["Uncategorized"]
 tags: ["Athletics", "Online abuse", "Social media", "Sport"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/d1520b9934d386d28e03eeeb816315c23c61a22e/0_274_5603_3363/master/5603.jpg?width=140&quality=85&auto=format&fit=max&s=57fdec940e8b51032c01057937b8ef23"
 description: "Eilish McColgan is in training for London Marathon debut‘Stop the jealousy and abuse of women athletes’The Olympic silver ­medallist Liz McColgan has hit out at..."
 ---
 

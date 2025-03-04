@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "William Christou in Aitaroun, south Lebanon"
 categories: ["Uncategorized"]
 tags: ["Hezbollah", "Lebanon", "Middle East and north Africa", "World news", "Israel", "Syria", "Iran"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/24a21968083b90a163b86b72ea73097fd4762d4c/0_316_5472_3283/master/5472.jpg?width=140&quality=85&auto=format&fit=max&s=057b7f54daaf1cf8aafdd8055052e3d6"
 description: "The fighting with Israel has weakened the group and brought heavy losses to residents in its southern heartland Crowds of people gathered last week in the ruine..."
 ---
 

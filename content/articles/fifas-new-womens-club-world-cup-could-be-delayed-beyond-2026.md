@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Exclusive by Tom Garry"
 categories: ["Uncategorized"]
 tags: ["Women"s football", "Football", "Sport", "Fifa"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/f28d55cf90c6d120bcda609c5e7ee8e663e7e1ab/0_302_4746_2846/master/4746.jpg?width=140&quality=85&auto=format&fit=max&s=d63595e94614aed6b27b8f2f36433ea1"
 description: "Tournament has backing but more preparation neededFour-team mini-tournament could take place in 2026Fifa’s new 16-team Women’s Club World Cup could be delayed b..."
 ---
 

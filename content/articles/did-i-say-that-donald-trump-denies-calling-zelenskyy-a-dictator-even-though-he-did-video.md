@@ -4,7 +4,7 @@ date: 2025-02-27
 author: ""
 categories: ["Uncategorized"]
 tags: ["Donald Trump", "Keir Starmer", "Volodymyr Zelenskyy", "Ukraine", "World news"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/eae2dee2a487d8692acec09ee902d3a60f68498d/0_176_4000_2400/master/4000.jpg?width=140&quality=85&auto=format&fit=max&s=a0383611c7647d249abc668b49b46bf3"
 description: "The US president, Donald Trump, denied calling the Ukrainian president, Volodymyr Zelenskyy, a dictator, despite calling him one on his social media platform, T..."
 ---
 

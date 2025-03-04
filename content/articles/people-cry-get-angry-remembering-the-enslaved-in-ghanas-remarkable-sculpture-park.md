@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Sarah Johnson"
 categories: ["Uncategorized"]
 tags: ["Global development", "Ghana", "Africa", "World news", "Slavery", "Museums", "Sculpture", "Art", "Culture"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/386c92fce2df8041666fa5c9f22c6d6522f59242/0_0_6000_3600/master/6000.jpg?width=140&quality=85&auto=format&fit=max&s=c9f161dc015038a245b0d01b89a3f804"
 description: "Kwame Akoto-Bamfo started by shaping one clay head in 2009. Now thousands are displayed at the Nykyinkyim Museum, each representing an African who was lost to s..."
 ---
 

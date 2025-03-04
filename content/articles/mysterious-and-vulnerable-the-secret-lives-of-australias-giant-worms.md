@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Petra Stock"
 categories: ["Uncategorized"]
 tags: ["Invertebrates", "Environment", "Animals", "Australia news"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/343609d3048108220f2d6b03e05ec6e15cdcb785/0_23_2048_1229/master/2048.png?width=140&quality=85&auto=format&fit=max&s=371204981039160bc23b9941ae2a50a3"
 description: "Australia has a huge diversity of worms on land, sand and sea such as the giant Gippsland earthworm which can stretch up to 3 metresOne of the world’s largest w..."
 ---
 

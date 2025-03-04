@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Callum Jones in New York"
 categories: ["Uncategorized"]
 tags: ["Trump tariffs", "Trump administration", "Donald Trump", "Canada", "Mexico", "US news", "World news", "Americas", "US politics"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/fe314de37b71a11b0e50e5e342941750d1732dde/0_334_5000_3000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=1d599180047392ea2f8f05fc43e40978"
 description: "Announcement leads to sharp sell-off on Wall Street as Trump also vows tariffs on farm products starting in AprilThe US will press ahead with steep tariffs on C..."
 ---
 

@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Emma Brockes"
 categories: ["Uncategorized"]
 tags: ["Oscars", "Awards and prizes", "Film", "Anora", "The Brutalist", "Donald Trump", "US news", "World news", "Culture"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/4ce9bd38c56b6fcb29fc6d346f3b1392d9231a8a/0_25_2702_1622/master/2702.jpg?width=140&quality=85&auto=format&fit=max&s=e48850aa60f19e0302425cdf59010a65"
 description: "Perhaps the Ozempic was making people light-headed, or the stars felt they should stay silent. Either way, there was a notable lack of politicsThe Oscars ceremo..."
 ---
 

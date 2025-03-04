@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Peter Walker"
 categories: ["Uncategorized"]
 tags: ["Brexit", "Foreign policy", "Keir Starmer", "Politics", "Ukraine", "UK news", "World news", "US news", "Europe", "European Union", "Donald Trump", "Volodymyr Zelenskyy", "Emmanuel Macron"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/05f82529d0277f304527867b0a23e47e126b89ba/105_594_5364_3219/master/5364.jpg?width=140&quality=85&auto=format&fit=max&s=3522e28203937e02939b981abf280113"
 description: "Keir Starmer won praise for taking the UK ‘back to the heart of Europe’ at the weekend, but will it be a long-term move?Britain is back. That was the concise ve..."
 ---
 

@@ -4,7 +4,7 @@ date: 2025-03-04
 author: "Associated Press"
 categories: ["Uncategorized"]
 tags: ["Whales", "Seattle", "Wildlife", "US news", "Environment", "Cetaceans", "World news", "Marine life", "West Coast"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/2beee483c66c9e5c7e27e5e2c11bfe6f3d8427b9/0_0_6000_3600/master/6000.jpg?width=140&quality=85&auto=format&fit=max&s=492873465b90e7ee0f64e9cec74b413f"
 description: "Gasps from dockside crowd watching Bigg’s orca pod in event described as ‘once-in-a-lifetime experience’A pod of orcas swam close to shore and amazed onlookers ..."
 ---
 

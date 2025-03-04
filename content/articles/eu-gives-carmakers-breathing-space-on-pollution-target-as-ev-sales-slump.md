@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Ajit Niranjan"
 categories: ["Uncategorized"]
 tags: ["Electric, hybrid and low-emission cars", "Greenhouse gas emissions", "Environment", "Motoring", "Travel and transport", "World news", "Business", "Automotive industry", "Automotive emissions", "Ursula von der Leyen", "European Commission", "European Union"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/7fe5501a0e4b4cddf41bc209d1557aa2975a96e1/0_267_4000_2399/master/4000.jpg?width=140&quality=85&auto=format&fit=max&s=1cf80859b2f0b50f267399484ef472b7"
 description: "Environmental groups say two-year grace period allowed by Ursula von der Leyen ‘rewards laggard’ manufacturersEuropean carmakers are to be given two extra years..."
 ---
 

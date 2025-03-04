@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Petra Stock"
 categories: ["Uncategorized"]
 tags: ["Oceans", "Environment", "Australia news", "Antarctica", "Science", "Climate science"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/294c16cd893248a5d0717a2e730a645183003586/599_0_2385_1433/master/2385.jpg?width=140&quality=85&auto=format&fit=max&s=1d1fece18ceccbe7090bb0d913604535"
 description: "Melting Antarctic ice is releasing cold, fresh water into the ocean, which is projected to cause the slowdownGet our breaking news email, free app or daily news..."
 ---
 

@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Paula Cocozza"
 categories: ["Uncategorized"]
 tags: ["Life and style", "Sex", "Counselling and therapy", "Divorce"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/5de5fe3035210f53510d6db6d787c2cf39766311/0_274_8192_4915/master/8192.jpg?width=140&quality=85&auto=format&fit=max&s=495f009b90d70eb9e516861ffd280274"
 description: "I spent a year in shock after my marriage collapsed. Then I realised how much pleasure I could wring out of lifeAs part of her training to be a counsellor, Jill..."
 ---
 

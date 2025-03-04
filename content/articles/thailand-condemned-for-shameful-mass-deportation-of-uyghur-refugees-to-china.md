@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Tom Levitt"
 categories: ["Uncategorized"]
 tags: ["Uyghurs", "World news", "Global development", "Xinjiang", "China", "Asia Pacific", "Human rights", "Thailand", "Refugees", "Islam", "Religion"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/c78bd30fc7b651c79c12020cb70e00212ed3565c/886_325_3130_1879/master/3130.jpg?width=140&quality=85&auto=format&fit=max&s=ffcbfc45fdeb858b100844eafcf9fa70"
 description: "Amid claims that deportees may face torture, family of one man say he was forcibly repatriated and will never see his children againThe family of one of dozens ..."
 ---
 

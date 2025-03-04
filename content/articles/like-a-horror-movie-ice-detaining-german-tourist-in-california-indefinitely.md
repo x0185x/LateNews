@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Marina Dunbar"
 categories: ["Uncategorized"]
 tags: ["US immigration", "San Diego", "US news", "Germany", "Mexico", "Los Angeles", "California"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/6dad4378fd44ed44ab5202ad455847dee8b901fa/0_449_6720_4031/master/6720.jpg?width=140&quality=85&auto=format&fit=max&s=59f30fb77c79b0cdbb14197b97aec680"
 description: "Jessica Brösche has spent more than a month in detention center after being denied entry at San Diego from MexicoA German tourist is fighting to be released fro..."
 ---
 

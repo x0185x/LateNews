@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Alex Bellos"
 categories: ["Uncategorized"]
 tags: ["Mathematics", "Mathematics", "Education", "Science"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/ffd6b8375c67e065618edda0de539112c460602f/0_81_2643_1587/master/2643.jpg?width=140&quality=85&auto=format&fit=max&s=1272ebe38c0855bddd180c93da714d40"
 description: "The solutions to today’s gridsEarlier today I set you these three Sudokus. They obey the standard rule of having all digits form 1 to 9 in each row, column and ..."
 ---
 

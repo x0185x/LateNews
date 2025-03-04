@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Sarah Sloat"
 categories: ["Uncategorized"]
 tags: ["Well actually", "Ageing", "Life and style", "Health", "Grandparents and grandparenting", "US retirement", "Mental health", "Family", "Society"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/9221f96ce2ed3dc7062db6af41749a05ffb6f6fe/0_0_1500_900/master/1500.jpg?width=140&quality=85&auto=format&fit=max&s=84b940d4f471d4dbcc2fa64de4dd41aa"
 description: "Today’s septuagenarians are different from the ones who came before, becoming grandparents and retiring laterToday’s septuagenarians are different from the ones..."
 ---
 

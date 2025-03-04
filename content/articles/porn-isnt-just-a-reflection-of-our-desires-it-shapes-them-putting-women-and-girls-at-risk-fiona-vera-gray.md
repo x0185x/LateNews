@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Fiona Vera-Gray"
 categories: ["Uncategorized"]
 tags: ["Pornography", "Violence against women and girls", "Online abuse", "Internet safety", "Technology"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/902a0468a95fa94a1de0a3b92fcfba84538bfe59/0_303_3500_2100/master/3500.jpg?width=140&quality=85&auto=format&fit=max&s=c03894c0a98019c103042b9baba4d489"
 description: "For too long UK law has trailed behind internet platforms. After a long-awaited review, ministers must put this rightIf you’ve seen porn in recent years, you’ll..."
 ---
 

@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Andrew Gregory and Kat Lay"
 categories: ["Uncategorized"]
 tags: ["Obesity", "World news", "Health", "UK news", "Medical research"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/4c6fc0e71bf7a9d7c92de6c8d3a4dc81b455de02/0_387_5183_3111/master/5183.jpg?width=140&quality=85&auto=format&fit=max&s=ec876cef088f5b1a3fd768c27229e8f2"
 description: "Analysis forecasts a third of young people will also be overweight or obese, in ‘unparalleled’ threat to healthMore than half of adults and a third of children ..."
 ---
 

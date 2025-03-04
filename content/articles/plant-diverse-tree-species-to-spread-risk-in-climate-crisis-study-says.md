@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Sandra Laville"
 categories: ["Uncategorized"]
 tags: ["Trees and forests", "Climate crisis", "Environment", "Rewilding", "UK news", "World news", "Greenhouse gas emissions"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/e589f120b4a76a609323644fea956c00c7b8bb69/119_0_3986_2392/master/3986.jpg?width=140&quality=85&auto=format&fit=max&s=58b82a6c5771ec86eed36e15b284b51d"
 description: "Uncertainty over climate and economy means ‘investment portfolio’ approach needed, researchers sayAn “investment portfolio approach” needs to be applied to larg..."
 ---
 

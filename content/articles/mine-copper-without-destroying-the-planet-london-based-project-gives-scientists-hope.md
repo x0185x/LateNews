@@ -4,7 +4,7 @@ date: 2025-03-02
 author: "Robin McKie"
 categories: ["Uncategorized"]
 tags: ["Environment", "Technology", "Research and development", "Pollution", "Science"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/61a92fb54e2c7952b42ce3476f16962be953791d/0_348_4000_2400/master/4000.jpg?width=140&quality=85&auto=format&fit=max&s=0a5db04f50f26fc8d479d2269091411c"
 description: "Experts hope research can create greener methods of extracting the metal vital for renewable energy revolution and boom in electrical devicesIt is the key ingre..."
 ---
 

@@ -4,7 +4,7 @@ date: 2025-03-03
 author: ""
 categories: ["Uncategorized"]
 tags: ["Trump tariffs", "Donald Trump", "Stock markets", "World news"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/759bdc04a804b1bdbd1bc0aa030e11e21e9ab464/60_0_1800_1080/master/1800.jpg?width=140&quality=85&auto=format&fit=max&s=59620bc07867bf63f49db8411b8a03ba"
 description: "Stock markets tumbled on Monday as Donald Trump announced tariffs on Mexico, Canada and China. The&nbsp;Dow Jones industrial average&nbsp;dropped 1.8% and the&n..."
 ---
 

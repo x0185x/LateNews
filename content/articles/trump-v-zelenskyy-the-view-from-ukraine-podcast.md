@@ -4,7 +4,7 @@ date: 2025-03-04
 author: "Presented by Helen Pidd with Luke Harding; produced by Ruth Abrahams, Eleanor Biggs, Rudi Zygadlo; executive producer Courtney Yusuf"
 categories: ["Uncategorized"]
 tags: ["Ukraine", "Volodymyr Zelenskyy", "Donald Trump", "US foreign policy", "Russia", "Europe"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/87025f17bdfe7e0ff7a90b7e451585da00e69487/0_264_6480_3887/master/6480.jpg?width=140&quality=85&auto=format&fit=max&s=7a9e6e25535a0dbb755c519489d69f4a"
 description: "What do Ukrainians make of the two presidents’ fractious meeting – and would they support a Trump-led peace deal? Luke Harding reportsThis weekend’s fractious O..."
 ---
 

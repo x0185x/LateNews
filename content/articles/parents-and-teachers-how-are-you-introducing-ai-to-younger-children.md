@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Guardian community team"
 categories: ["Uncategorized"]
 tags: ["Artificial intelligence (AI)", "Computing", "Technology", "US education", "Education"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/77244fa3bc69530f5ae49b0be241187e1293af90/0_122_3500_2100/master/3500.jpg?width=140&quality=85&auto=format&fit=max&s=5d7bc05715676a81d845133e20c60bfc"
 description: "We’d like to hear from parents and teachers who’re introducing AI to younger children and find out how they’re instructing them how to use itAcross the world si..."
 ---
 

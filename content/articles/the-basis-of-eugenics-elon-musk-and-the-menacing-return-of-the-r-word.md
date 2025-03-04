@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Justin Kirkland"
 categories: ["Uncategorized"]
 tags: ["Disability", "Elon Musk", "Donald Trump", "Trump administration", "Social media", "US news", "US politics", "Republicans", "Far right (US)"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/50be61a435dc96a159d22de48c5ce985c0b46195/322_271_2839_1703/master/2839.jpg?width=140&quality=85&auto=format&fit=max&s=5a8452ac80fb903d91b338766ea4220b"
 description: "The slur is rooted in the dehumanization of people with intellectual disabilities. Its resurgence threatens the fragile progress we’ve madeI got into my one and..."
 ---
 

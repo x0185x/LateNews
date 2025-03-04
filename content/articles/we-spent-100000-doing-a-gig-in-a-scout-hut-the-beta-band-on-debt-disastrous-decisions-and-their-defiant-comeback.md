@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Dave Simpson"
 categories: ["Uncategorized"]
 tags: ["Music", "Pop and rock", "Indie", "Culture"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/bf641a90b9dc3dca94750d5af7043744cd525fcc/683_716_6228_3737/master/6228.jpg?width=140&quality=85&auto=format&fit=max&s=c359f45f2f255de933169c25be7f7c50"
 description: "Fiercely original and stunning live, they should have been massive – but they imploded. As the Scots return, they relive disowning their debut album, blowing To..."
 ---
 

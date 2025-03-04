@@ -4,7 +4,7 @@ date: 2025-03-03
 author: ""
 categories: ["Uncategorized"]
 tags: ["Keir Starmer", "Ukraine", "Nigel Farage", "Donald Trump", "World news", "UK news", "Politics"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/d743cf80b9f6fdf3647ba6a3f9ad123ca8d7c1cd/60_0_1800_1080/master/1800.jpg?width=140&quality=85&auto=format&fit=max&s=c2825390feca145a6b0f4fb0cf279ca6"
 description: "The UK prime minister, Keir Starmer, said in parliament on Monday that Donald Trump’s proposed minerals deal would not provide a sufficient security guarantee f..."
 ---
 

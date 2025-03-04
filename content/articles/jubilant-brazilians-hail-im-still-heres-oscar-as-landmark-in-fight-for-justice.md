@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Tiago Rogero in Rio de Janeiro"
 categories: ["Uncategorized"]
 tags: ["Brazil", "I"m Still Here", "World news", "Film", "Americas", "Jair Bolsonaro", "Oscars"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/fbe603a4124a4c2fcecd1324e89417ebc97caff9/0_126_3814_2289/master/3814.jpg?width=140&quality=85&auto=format&fit=max&s=220d454f9acb84109bfb774807259d1e"
 description: "Walter Salles’s dictatorship-era movie turns focus on dark time in country’s history and more recent coup attemptAhead of the Oscars ceremony, Brazil’s Fernanda..."
 ---
 

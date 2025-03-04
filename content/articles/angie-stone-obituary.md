@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Peter Mason"
 categories: ["Uncategorized"]
 tags: ["Soul", "Pop and rock", "US news", "Hip-hop", "South Carolina", "Rap", "New York", "Broadway"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/2a6640f125c0926b22276221cb5a0147d8f9d717/573_1_2932_1759/master/2932.jpg?width=140&quality=85&auto=format&fit=max&s=d14f8e0e5ef550933312b0c1c7b3069d"
 description: "American soul singer and songwriter who enjoyed success with her popular hits No More Rain and Wish I Didn’t Miss YouAngie Stone, who has died aged 63 in a traf..."
 ---
 

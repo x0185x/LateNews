@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "PA Media"
 categories: ["Uncategorized"]
 tags: ["Benjamin Netanyahu", "Israel", "Middle East and north Africa", "Hamas", "Gaza", "Palestinian territories", "Israel-Gaza war"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/6d99b5bcc1c4b15fcd9fe7b10001a925fba67c96/636_0_2755_1654/master/2755.jpg?width=140&quality=85&auto=format&fit=max&s=83ace71102fffa8b7b2c4ab77cd5da70"
 description: "Yehuda Cohen says Israeli prime minister is refusing permanent ceasefire because ‘he wants to stay in power’The father of an Israeli hostage has said Benjamin N..."
 ---
 

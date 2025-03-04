@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Jo Griffin"
 categories: ["Uncategorized"]
 tags: ["Global development", "India", "Disability", "South and central Asia", "World news", "Books"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/23aeed548caaa8ad3df8a89e234dad2ebdc56dec/0_371_5660_3397/master/5660.jpg?width=140&quality=85&auto=format&fit=max&s=27e48b740f11f1040af69679cb45b505"
 description: "After spending four years meeting people all over the country, Vicky Roy’s new book, Everyone is Good at Something, contains 100 inspirational life stories to r..."
 ---
 

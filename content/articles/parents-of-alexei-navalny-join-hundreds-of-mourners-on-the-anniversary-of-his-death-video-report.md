@@ -4,7 +4,7 @@ date: 2025-02-16
 author: ""
 categories: ["Uncategorized"]
 tags: ["Alexei Navalny", "Russia", "Europe", "World news"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/ec6fa139d6c82b0290508c8ec3a67960e5fc294e/0_317_5940_3563/master/5940.jpg?width=140&quality=85&auto=format&fit=max&s=2a43eb1f745fafdd3ccfe67cdd51155d"
 description: "The parents of late Russian opposition leader Alexei Navalny joined hundreds of mourners at their son's grave on Sunday to mark the anniversary of his death. Na..."
 ---
 

@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Matt Fidler"
 categories: ["Uncategorized"]
 tags: ["Oscars", "Film", "Awards and prizes", "Culture", "Anora", "Dune: Part Two", "The Brutalist", "A Complete Unknown", "Emilia Pérez"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/c54c3817d4db9a7d2267e512166c542f1773497d/0_374_8131_4879/master/8131.jpg?width=140&quality=85&auto=format&fit=max&s=d741570b4e15ce9d76de1a9dca474cd7"
 description: "The best photos of the night at the 97th annual Academy Awards, with big wins for Anora and The Brutalist• Full report on the ceremony• The top looks from the r..."
 ---
 

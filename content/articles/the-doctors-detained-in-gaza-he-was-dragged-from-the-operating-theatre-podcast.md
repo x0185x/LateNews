@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Presented by Hannah Moore with Annie Kelly; produced by Natalie Ktena and Tom Glasser; executive producer Homa Khaleeli"
 categories: ["Uncategorized"]
 tags: ["Israel-Gaza war", "Gaza", "Palestinian territories", "Israel", "Middle East and north Africa", "World news", "Doctors"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/796e59b0d27cf06946694f50a0a5b5d61472ebb8/54_0_1800_1080/master/1800.jpg?width=140&quality=85&auto=format&fit=max&s=48ea0c42cc43af5cc3f954b1fda7471a"
 description: "Doctors in Gaza say they have been targeted for doing their jobs, detained and even tortured. Annie Kelly reports Since the war in Gaza began more than a year a..."
 ---
 

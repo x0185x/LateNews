@@ -4,7 +4,7 @@ date: 2025-02-27
 author: "Guardian community team"
 categories: ["Uncategorized"]
 tags: ["Religion"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/6453cbed635fa71d07b61886b9adcef7e9fdf8c9/0_621_5366_3219/master/5366.jpg?width=140&quality=85&auto=format&fit=max&s=c1f92d264e5cf2bb0d19d0a7fd12c2a4"
 description: "We would like to hear from people about how their faith influences their views on politics and the environmentHow much does your faith influence your political ..."
 ---
 

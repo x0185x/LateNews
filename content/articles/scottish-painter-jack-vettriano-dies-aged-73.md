@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Lanre Bakare Arts and media correspondent"
 categories: ["Uncategorized"]
 tags: ["Art", "Painting", "Art and design", "Scotland", "France", "Culture", "UK news", "Europe", "World news"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/9ea12307ef473b9a093a2a34af0ad6d5ca265e04/30_345_2612_1567/master/2612.jpg?width=140&quality=85&auto=format&fit=max&s=45275767439eeafb33d803a2faa0284b"
 description: "Artist found dead at his apartment in Nice in southern France on Saturday, his publicist saysA life in picturesEddy Frankel: ‘His paintings are like a double ch..."
 ---
 

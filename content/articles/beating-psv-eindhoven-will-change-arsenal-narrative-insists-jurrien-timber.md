@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Ed Aarons in Eindhoven"
 categories: ["Uncategorized"]
 tags: ["Arsenal", "Mikel Arteta", "PSV Eindhoven", "Champions League", "European club football", "Football", "Sport"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/d0a192ac3b31d9ee4e183e39ab03cbad2f021461/1710_1023_2553_1532/master/2553.jpg?width=140&quality=85&auto=format&fit=max&s=7d34b6e31355a279a3e57dc76d59d107"
 description: "Netherlands defender confident ahead of last-16 Euro tieMidfielder Merino set to continue as makeshift strikerJurriën Timber has said Arsenal have an opportunit..."
 ---
 

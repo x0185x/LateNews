@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Presented by Max Rushden with Barry Glendenning, John Brewin and Sanny Rudravajhala. Produced by Joel Grove and our executive producer is Danielle Stephens"
 categories: ["Uncategorized"]
 tags: ["Football", "Sport"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/1d439c70d7ced0c1cf3df46bd559f1393594015e/0_11_4273_2563/master/4273.jpg?width=140&quality=85&auto=format&fit=max&s=3640017ea15ec081eb7fc7a6ccaee5ba"
 description: "Max Rushden is joined by Barry Glendenning, John Brewin and Sanny Rudravajhala as Fulham knock Manchester United out of the FA Cup on penaltiesRate, review, sha..."
 ---
 

@@ -4,7 +4,7 @@ date: 2025-02-26
 author: "Guardian community team"
 categories: ["Uncategorized"]
 tags: ["Dentists", "Health"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/5d7d3bbee7c205a69687710c1b0b9f52fd53057f/679_940_7273_4364/master/7273.jpg?width=140&quality=85&auto=format&fit=max&s=2bbbf77f38f879f8708de761972ee409"
 description: "We would like to hear from parents about their children’s experiences of getting NHS dental treatmentAccording to a government report, nearly 50,000 tooth extra..."
 ---
 

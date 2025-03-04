@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Shon Faye, Nussaibah Younis and Guardian readers"
 categories: ["Uncategorized"]
 tags: ["Books", "Culture"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/2750d37e83e08e87c314c321cf6f55ac66010e8e/0_0_1200_720/master/1200.jpg?width=140&quality=85&auto=format&fit=max&s=33b4e6d39500361fdb944318cc68b147"
 description: "Authors and Guardian readers discuss the titles they have read over the last month. Join the conversation in the commentsIn Naomi Klein’s most recent book Doppe..."
 ---
 

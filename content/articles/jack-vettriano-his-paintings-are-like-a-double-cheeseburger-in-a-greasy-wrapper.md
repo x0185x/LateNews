@@ -4,7 +4,7 @@ date: 2025-03-03
 author: "Eddy Frankel"
 categories: ["Uncategorized"]
 tags: ["Painting", "Art", "Art and design", "Culture", "Royal Academy of Arts"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/cdc8d8e3ac31cb43245eabc6a611c1ca870848dd/0_99_2868_1721/master/2868.jpg?width=140&quality=85&auto=format&fit=max&s=c7530dea033b1593f2765cad1ced8ddf"
 description: "The Scot painted singing butlers, ‘broads’ in bras and tough guys in suits, in works critics found lurid, chintzy, devoid of irony and often sexist. But they we..."
 ---
 

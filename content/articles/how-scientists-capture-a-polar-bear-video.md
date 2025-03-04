@@ -4,7 +4,7 @@ date: 2025-02-25
 author: "Temujin Doran and Katie Lamborn"
 categories: ["Uncategorized"]
 tags: ["Climate crisis", "Arctic", "Polar regions", "Norway", "Marine life", "Endangered habitats", "Wildlife"]
-featured_image: ""
+featured_image: "https://i.guim.co.uk/img/media/944b478e8278d50b42356459269fa0a567d73a5d/60_0_1800_1080/master/1800.jpg?width=140&quality=85&auto=format&fit=max&s=05a7031fff3fd7a342d972406b6b9142"
 description: "Each spring since 2003, Jon Aars, senior scientist at the Norwegian Polar Institute, and his team have conducted an annual polar bear monitoring program on Sval..."
 ---
 
