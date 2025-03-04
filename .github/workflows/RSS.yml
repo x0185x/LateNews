@@ -1,9 +1,7 @@
 name: RSS to Hugo Converter
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   build:
