@@ -1,35 +1,39 @@
-name: RSS to Hugo Converter
+name: Fetch RSS and Commit Articles
 
 on:
-  workflow_dispatch:  # Allow manual trigger
+  schedule:
+    - cron: "0 * * * *"  # Runs every hour
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
-  convert-rss:
+  fetch-and-commit:
     runs-on: ubuntu-latest
+
     permissions:
-      contents: write  # Explicitly set permission to write to repository
-    
+      contents: write  # Allows committing changes
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
-      
+        uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
-      
+          python-version: "3.9"
+
       - name: Install dependencies
+        run: pip install feedparser html2text
+
+      - name: Run RSS script
+        run: python script.py "https://www.wired.com/feed/tag/ai/latest/rss" --output "content/articles"
+
+      - name: Configure Git
         run: |
-          python -m pip install --upgrade pip
-          pip install feedparser html2text
-      
-      - name: Run RSS to Hugo converter
-        run: python converter.py "https://www.wired.com/feed/tag/ai/latest/rss" --output "content/articles"
-      
-      - name: Commit changes
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push changes
         run: |
-          git config --global user.name 'GitHub Action'
-          git config --global user.email 'action@github.com'
-          git add content/posts/rss/
-          git diff --quiet && git diff --staged --quiet || git commit -m "Add RSS articles from feed"
+          git add content/articles/*.md
+          git commit -m "Updated articles from RSS feed" || echo "No changes to commit"
           git push
