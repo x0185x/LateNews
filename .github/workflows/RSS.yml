@@ -1,202 +1,36 @@
 name: RSS to Hugo Converter
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '0 */12 * * *'  # Run every 12 hours
-  workflow_dispatch:  # Allow manual trigger
+    - cron: '0 */6 * * *'  # Runs every 6 hours
 
 jobs:
   convert-rss:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write  # Explicitly set permission to write to repository
     
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-      
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install feedparser html2text
-      
-      - name: Create RSS to Hugo converter script
-        run: |
-          cat > rss_to_hugo.py << 'EOF'
-          #!/usr/bin/env python3
-          import os
-          import re
-          import feedparser
-          import html2text
-          from datetime import datetime
-          import unicodedata
-          import ssl
-          
-          def slugify(value):
-              """Convert string to slug format"""
-              value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore').decode('ascii')
-              value = value.lower()
-              value = re.sub(r'[^\w\s-]', '', value).strip()
-              value = re.sub(r'[-\s]+', '-', value)
-              return value
-          
-          def extract_image_url(content):
-              """Extract the first image URL from HTML content if available"""
-              img_pattern = re.compile(r'<img[^>]+src="([^">]+)')
-              match = img_pattern.search(content)
-              if match:
-                  return match.group(1)
-              return ""
-          
-          def format_date(date_str):
-              """Format the date string to YYYY-MM-DD format"""
-              try:
-                  date_obj = datetime(*date_str[:6])
-                  return date_obj.strftime("%Y-%m-%d")
-              except (TypeError, ValueError):
-                  return datetime.now().strftime("%Y-%m-%d")
-          
-          def extract_categories_and_tags(entry):
-              """Extract categories and tags from the RSS entry"""
-              categories = []
-              tags = []
-              
-              if hasattr(entry, 'categories'):
-                  for cat in entry.categories:
-                      if isinstance(cat, str):
-                          categories.append(cat)
-                      elif isinstance(cat, tuple) and len(cat) > 0:
-                          categories.append(cat[0])
-              
-              if hasattr(entry, 'tags'):
-                  for tag in entry.tags:
-                      if hasattr(tag, 'term'):
-                          tags.append(tag.term)
-                      elif isinstance(tag, str):
-                          tags.append(tag)
-                      elif isinstance(tag, tuple) and len(tag) > 0:
-                          tags.append(tag[0])
-              
-              if not tags and categories:
-                  tags = categories[:3]
-              
-              if not categories:
-                  categories = ["Uncategorized"]
-              
-              return categories, tags
-          
-          def create_hugo_article(entry, output_dir):
-              """Create a Hugo article from an RSS entry"""
-              title = entry.title
-              pub_date = format_date(entry.published_parsed if hasattr(entry, 'published_parsed') else 
-                                   entry.updated_parsed if hasattr(entry, 'updated_parsed') else None)
-              
-              author = "Unknown"
-              if hasattr(entry, 'author'):
-                  author = entry.author
-              elif hasattr(entry, 'author_detail') and hasattr(entry.author_detail, 'name'):
-                  author = entry.author_detail.name
-              
-              categories, tags = extract_categories_and_tags(entry)
-              
-              content = ""
-              if hasattr(entry, 'content') and entry.content:
-                  content = entry.content[0].value
-              elif hasattr(entry, 'summary'):
-                  content = entry.summary
-              elif hasattr(entry, 'description'):
-                  content = entry.description
-              
-              h = html2text.HTML2Text()
-              h.ignore_links = False
-              h.ignore_images = False
-              h.body_width = 0
-              markdown_content = h.handle(content)
-              
-              featured_image = extract_image_url(content)
-              
-              description = entry.summary if hasattr(entry, 'summary') else ""
-              description = re.sub(r'<[^>]+>', '', description)
-              description = description[:160] + "..." if len(description) > 160 else description
-              
-              # Create filename based on title
-              filename = slugify(title) + ".md"
-              filepath = os.path.join(output_dir, filename)
-              
-              # Check if file already exists
-              if os.path.exists(filepath):
-                  print(f"Article already exists: {filepath}")
-                  return None
-              
-              front_matter = f"""---
-          title: "{title}"
-          date: {pub_date}
-          author: "{author}"
-          categories: {str(categories).replace("'", '"')}
-          tags: {str(tags).replace("'", '"')}
-          featured_image: "{featured_image}"
-          description: "{description.replace('"', '\\"')}"
-          ---
-          
-          """
-              
-              with open(filepath, 'w', encoding='utf-8') as f:
-                  f.write(front_matter)
-                  f.write(markdown_content)
-              
-              return filepath
-          
-          def process_feed(feed_url, output_dir, max_articles=None):
-              """Process an RSS feed and convert entries to Hugo articles"""
-              if hasattr(ssl, '_create_unverified_context'):
-                  ssl._create_default_https_context = ssl._create_unverified_context
-              
-              feed = feedparser.parse(feed_url)
-              
-              os.makedirs(output_dir, exist_ok=True)
-              
-              processed_articles = []
-              entries = feed.entries[:max_articles] if max_articles else feed.entries
-              
-              for entry in entries:
-                  try:
-                      filepath = create_hugo_article(entry, output_dir)
-                      if filepath:
-                          processed_articles.append(filepath)
-                          print(f"Created article: {filepath}")
-                  except Exception as e:
-                      print(f"Error processing entry '{entry.title if hasattr(entry, 'title') else 'Unknown'}': {str(e)}")
-              
-              return processed_articles
-          
-          if __name__ == "__main__":
-              # Configuration
-              feed_url = "https://www.wired.com/feed/tag/ai/latest/rss"
-              output_dir = "content/articles"  # Hugo content directory
-              
-              # Create the output directory if it doesn't exist
-              os.makedirs(output_dir, exist_ok=True)
-              
-              # Process the feed
-              print(f"Processing feed: {feed_url}")
-              articles = process_feed(feed_url, output_dir)
-              
-              print(f"Done! Created {len(articles)} Hugo articles in '{output_dir}' directory.")
-          EOF
-          chmod +x rss_to_hugo.py
-      
-      - name: Run RSS to Hugo converter
-        run: python rss_to_hugo.py
-      
-      - name: Commit changes
-        run: |
-          git config --global user.name 'GitHub Action'
-          git config --global user.email 'action@github.com'
-          git add content/posts/rss/
-          git diff --quiet && git diff --staged --quiet || git commit -m "Add RSS articles from feed"
-          git push
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install feedparser html2text
+
+    - name: Run RSS to Hugo converter
+      run: |
+        chmod +x converter.py
+        python converter.py "https://www.wired.com/feed/tag/ai/latest/rss" --output "content/articles" --max 10
+
+    - name: Commit changes
+      run: |
+        git config --local user.email "x0185x@users.noreply.github.com"
+        git config --local user.name "x0185x"
+        git add content/
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update Hugo articles from Wired AI RSS feed - $(date -u +'%Y-%m-%d %H:%M:%S UTC')" && git push)
