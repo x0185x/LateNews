@@ -1,0 +1,17 @@
+---
+title: "Highland Park Parade Gunman Pleads Guilty to Murder, Attempted Murder Charges as Trial Was Set to Begin - WTTW News"
+date: 2025-03-03
+author: "Unknown"
+categories: ["Uncategorized"]
+tags: []
+featured_image: ""
+description: "Highland Park Parade Gunman Pleads Guilty to Murder, Attempted Murder Charges as Trial Was Set to Begin&nbsp;&nbsp;WTTW NewsRobert Crimo III pleads guilty to Hi..."
+---
+
+  1. [Highland Park Parade Gunman Pleads Guilty to Murder, Attempted Murder Charges as Trial Was Set to Begin](https://news.google.com/rss/articles/CBMivAFBVV95cUxNTUFKLU9RUWcwYWxSYTc4UG5mZnRpVFhxVG9pV3RsNFpiZkZIYXNHZ3VvN3NRekVnRk81dDB0YXQ3WGItYzZFVWN0MGt6UWxkR2ZOSnZEYmkxQjQ3aDVobnFUY0VfeXpJNURzTkFTcUdFTmo2ZVBfa2lRWE5CazRXSDB3ZzBKb1d6M0RUdFg1ZnUtOGxkdXN4ejZ0LURpaFBYNUhzZ2dHamx6aEQ1WUVEMjJSNVU5OGptbVZfcw?oc=5)  WTTW News
+  2. [Robert Crimo III pleads guilty to Highland Park parade shooting](https://news.google.com/rss/articles/CBMipwFBVV95cUxPWjVZbm9lYThXRDFNZmxzTURfM3U1Ti1Lc2dpSlNJMF9XbDNVTV9EYS1xTF9xUVc1Rk1tbG1NczliVGZTUEZlempiUWFtUnFLQ3dIc3EwQlNUSDF6LVZsTFo4QjJhUWhhXzFjVFBPMWVDSzNqa19tWWhHa2VfTGRsUndkN3ZlVm1ucUpJM25tcmFBYmVrZUF1RFFUYkhTQmtGWUxnendIYw?oc=5)  WBEZ Chicago
+  3. [Mom of Highland Park shooter asserts son’s innocence after courtroom outburst](https://news.google.com/rss/articles/CBMi0gFBVV95cUxPSXpyRUhrcEpOcmFveEVkc2hMQWR5ZjF4RUhrUlpsMlpHRmQ4UjdHWmFhZVlLTEdpU2h5NWFXUVhSRWxwREtyWC1qZ2ptU09DWll5aHVYTmN4YmVwLXlMb3U2aVFfSXdNb24xUnlmdzJtdVM0WEx5RHRHblpPVjFBM0xKX0hXNUl4cnpYVExzOHJnMlFFR1NLVlBNYk9RUDB6Qkx0T1ZFeWlCQXY4NEhnVEh5XzZTaXloTzVKX1JfZ29OMDJUd2JtUDlheEcwaVd5a1HSAdcBQVVfeXFMTnJVUExXYVkzV3d5YkpZRUJJRjVJcG1zUndWNUE3TGhFYjEzbXIzamliZXlXWlJvdkR3cVdPRU9FcWgwTzVScFBOM3BLdEJQVEZ5QllQUWlfN1ltUGFJbG1PejlUV2YxdzdKc2hCLTVPN1NLOUNDRDBWUlJDMDVDNFRLODdvekVBdkhkclBpeERUTXJnLV9xRmEyelN4RTJHcTg4YlNiaDZFZkJPZXpob05HYzQ5RUVfMzdSVmwwRFV5X05ESGtPX05WRW9kZTlra2M0b3VuNGc?oc=5)  WGN TV Chicago
+  4. [Illinois man pleads guilty to 2022 Highland Park mass shooting](https://news.google.com/rss/articles/CBMiWkFVX3lxTE92dDIyZ0t5eDBoaC1Tdk9PRS1tRU1IelRWS05fa2lRaFhpRnVLUDd1NTFmaTRfMW02cWpkRmxRSzNoX0N0aEcwWXhfQVhMVUpKMEhDZTNzV093dw?oc=5)  BBC.com
+  5. [What does a plea change in alleged Highland Park shooter's case mean?](https://news.google.com/rss/articles/CBMiswFBVV95cUxQTGpuN3c2SGs2WllsODlpSmtoVVZMNDQzemphMlFiU0dwbjI4bElSODNsUG5vWDJzWGJsb1VtNUE4YU5OUmhzREhwZXdBWHRmTzJ5UWFEZ1ZseDMweHAxa3l0REpYdkNlUUZzM2tyZ0gzdmVtNk5nbzY4UGZQREVnOFFSbUhMNXoxU1F4cWszMUpDbTE4a2lqWTBOaGFSZGNUMmgwVDV3QmNrRTRJaUhsYmc4ONIBuwFBVV95cUxNeVh2QjNKUG0wNG00TFlxZ29uWlBKb1laWS0xOHp2dWV2U0FPZ1NfZm5jWHNMQ1d1OUh5TmNySFRJclJCbERmblhNdXVHcWpaY3RxUDExRzNaaWRZN0RwVHNrbnhvWDU5SzNjRmZ4X0JlSVFObXNESWt1RWRYUnAwS3JvOGZKT1FTRzBUcjZRczVOd2htVFJWWDFPYTNCbzNDaGl6bUdyWHBwdGdzZ1BMdS1NdldrYmJ1UWE4?oc=5)  NBC Chicago
+
+
