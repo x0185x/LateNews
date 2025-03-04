@@ -24,7 +24,7 @@ jobs:
           pip install feedparser html2text
       
       - name: Run RSS to Hugo converter
-        run: python converter.py https://www.wired.com/feed/tag/ai/latest/rss --output content/articles
+        run: python converter.py "https://www.wired.com/feed/tag/ai/latest/rss" --output "content/articles"
       
       - name: Commit changes
         run: |
