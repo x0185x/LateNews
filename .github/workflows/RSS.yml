@@ -23,7 +23,7 @@ jobs:
         run: pip install feedparser html2text
 
       - name: Run RSS script
-        run: python script.py "https://www.theguardian.com/uk/rss" --output "content/articles"
+        run: python script.py "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en" --output "content/articles"
 
       - name: Configure Git
         run: |
