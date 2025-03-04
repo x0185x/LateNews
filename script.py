@@ -73,7 +73,7 @@ author: "{author}"
 categories: {str(categories).replace("'", '"')}
 tags: {str(tags).replace("'", '"')}
 featured_image: "{featured_image}"
-description: "{description.replace('"', '\\"')}"
+description: "{description.replace('\"', '\\\"')}"
 ---
 
 """
