@@ -1,0 +1,17 @@
+---
+title: "Vikings QB Sam Darnold not expected to get franchise tag as Minnesota makes $40.2 million decision, per report - CBS Sports"
+date: 2025-03-04
+author: "Unknown"
+categories: ["Uncategorized"]
+tags: []
+featured_image: ""
+description: "Vikings QB Sam Darnold not expected to get franchise tag as Minnesota makes $40.2 million decision, per report&nbsp;&nbsp;CBS SportsSources: Vikes likely won't ..."
+---
+
+  1. [Vikings QB Sam Darnold not expected to get franchise tag as Minnesota makes $40.2 million decision, per report](https://news.google.com/rss/articles/CBMi3AFBVV95cUxQcTlxb2NaWWtFTVQ5Q0NhVW9pVkxqcEIxbW1MbzZFR295ZGJBWF9JM19zUkh5UlNqVTEzMFhKMDRpVU51NkNuLU5FWnprZVpOVDhiNklVX3czUlloZ1ZpNXlwMmdzazZabFNzMVdnNGxWR3VoWDJKUXNjNS01T0Y4c0p5MWpMLXBrSU0zR0NfX3RYclB0VkpWRmJMTG1MX0JJZGRJV05WVEtUdzRabllIRkdpSnV1ODR4Y3BIOFNWMlU2NjlSSXBpR3JSNlJxU255Y2hDYkQ2VDlmckMz0gHiAUFVX3lxTFBCU1M3RWdwZEJTajBoQklHTVg4dm5icjFfU0lVM2kxdUxfQXlXVkxrc0VUSnBRNXRZU3VOajQ1QVlXWHh3Z0VIWXRWWTk0LTFLVTVjMlVhU1o4LTIyNkpiXzBQbzlWWUR6Z1d1ZEhHRUloS19QVk1PbmJ6TEFVSnB5M2tCNHUyTUx3R2FRbWNyOU84Nmo5RkZVYU1JZkZZQVd0X1lpMVlJamZ3a01JenhCVlZUMWdkbWN5VVZVQllSb3hxelhVekhMM3p6YTlSNDJ1RGZwR3JKbXZxQ1FzUElDYVE?oc=5)  CBS Sports
+  2. [Sources: Vikes likely won't franchise-tag Darnold](https://news.google.com/rss/articles/CBMikAFBVV95cUxNcDBub3hYLWhSemh6N2lDQ3lhaWRzN0tULVNtTTRtWTB5X3hjVEhFdGM4LV8tMnlGblJWcFNQY0JSeU5RSFl1MkZHdF9SczZiRFNXWFd0QVdIa2JGN1pjUnFyZFQ4b0hyN2hLaG1KZVk4Q2QtckNQQzRTYmxwQ2h1QWVPZ1pBWWNlVFd6VnZtVnE?oc=5)  ESPN
+  3. [Vikings not expected to use franchise tag on QB Sam Darnold; parties working through options](https://news.google.com/rss/articles/CBMijAFBVV95cUxORG8wQ1hISElSa08zSDZZakIyN2VWUFhXemdsc01ScjRJVF9WVExpUnhLUWdMNjhIUkVnOExvdDNjcVAyLXpNTE5UeC0yV0I5QktDUVd2TW5qcXVwTV9nQWtwTmt2ZWVjWnVaNVhrenlEWW1ZZ1cxc2xfSTVTQ01qQUJBTm5ZazZCWng4dw?oc=5)  NFL.com
+  4. [2025 NFL free agency rumors: Vikings' Sam Darnold most likely to land with one of these two teams](https://news.google.com/rss/articles/CBMiywFBVV95cUxQclVla2UyTU5TcW9ISnVzaWlMYl84WVpoRFNfQjJRLU10NlJGQjAxY3ItZnRhWnV2bGVDeEpsN0tmQzdFbXV5dG0yT0NuVlNsT283OVdIX1U5Nm1EYlRHNXlockRVX09yeFV6VmNoZWpqZ1haMWN2YWpIajVaWmFLZGVKY0dSUmJUMG00QmJhcEhZX0N2bnNrejRmS3VzSWhlSG1YRld2bWVzRnAwaF9FZThrNGIzc0FLamNIZ0xKSjNqMWdyWGd3T2FtQdIB0AFBVV95cUxQWkplTTI2NGpiMnVIRjhuczRza21QMmw1ZmdpNURIZGM0bkZXNEtoclBjenFwcEM2XzZkRFotRzBMSjJUSUZ1c1RZa284RUxFSmYxWThzNUZja215Y2xBYkRBOVZiRXl6b28ySVlKYlJ1SWNtaDFMdzNhTHRyMkVacVRORTV1QnBzWnNlYkI4MEVpV3pHNUU2by11QTZycEo5VWNYZFhySmY2dHgyZXk0SkVRS2NVakJWN1lxT2c4aERpbkhDcy1ERWRZS1JtVW9r?oc=5)  CBS Sports
+  5. [Battista on Sam Darnold's Future: Free Agency Market 'Is Not Great' For Quarterbacks Right Now](https://news.google.com/rss/articles/CBMivgFBVV95cUxQQ2JsVjlEX1I0RUpHVzlOQ0IzbHhmMUtuam9neGNlSHVZZVlVUnpZTnR6bDhKaWNLbmFraVRtdXREUWdFZ0pCOUZqNHJWX0c1dm1jOGVPWVZBVDV1cXViMVRQM2N0Sm1yQXU1eWhmdE9GSkpseG9kR2VIQkJvekVxQV9LejF6cmpnendkZ3kyTDVvRmk0QWVIc0RnTXAwNG1IQmxzd0FSM05zZ1R3YlhKZE5BSGJpX1p2SWFpbnRn?oc=5)  Vikings.com
+
+

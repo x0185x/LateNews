@@ -1,0 +1,17 @@
+---
+title: "Minnesota House votes down bill to ban transgender women and girls from female sports - Alexandria Echo Press"
+date: 2025-03-04
+author: "Unknown"
+categories: ["Uncategorized"]
+tags: []
+featured_image: ""
+description: "Minnesota House votes down bill to ban transgender women and girls from female sports&nbsp;&nbsp;Alexandria Echo PressSenate Democrats block GOP-led bill to ban..."
+---
+
+  1. [Minnesota House votes down bill to ban transgender women and girls from female sports](https://news.google.com/rss/articles/CBMiygFBVV95cUxORjBlTllhSXZkeFdGY3BwWmxTUmpJTE03Rjd1bHNuUkRpOGVlT1d6M1NfMHVUZVRGRVN5UGw2aTlBYkFidmNEVVhaSjNnSloycnZTTUJERDZOSGc0SWRBSTdTU2ZfdkhmNHhVYWFfSkVtR0kzRVV6Umk5dG5RSmJvZUNLRGV3SWhTaWtiVE9QMDNsRWI2T01BVjJCLXZyZ19JWVJmbmhtdTlkczFtcWt5bjJNeTFWaHB2bm11TjJkQ0dNVE9xZFloRGRn?oc=5)  Alexandria Echo Press
+  2. [Senate Democrats block GOP-led bill to ban transgender athletes from women's sports](https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTnM2bzl1Q3QxMjJNNjlpUzJBeWRrOG5xbzBDYU11RDNOSm5JSDdSN2tlYkJWcGo1QXVUQlB1VmMwZDRDenUtczhEdzRXNjh0dUM4M3ZIWmpMQ0xxQm16MnQzU3ZPVWhhN1l4dV9aaG5uOE5DVzlYOXpFdkM4TFFncV9FdEtXMTZFTTY1bTgxVlNKbVVManZqYU9Kb19iWHVqNnVtMU5xYXZxYmNvdXJ4VWVHYTFsbkNRVnhR0gFWQVVfeXFMTk04VzY5T2J5bjVpdVZ6ODdRNnJTY3JCVzJEcWN6dU9zQkU0MS10UC1oU3lmX1NfNzh3TUJqTFpkZVdYbEFkYTNtUXJDRVNBUzJTaUJ1Q1E?oc=5)  NBC News
+  3. [Tennis legend has fiery response after Senate Dems fail to back bill keeping boys out of girls' sports](https://news.google.com/rss/articles/CBMixAFBVV95cUxNU1lZS0V5QVU4NXI5Sy1kWGg5c2NzWERrU3k4QUM2dk9sMmRnQ0pEWFh6WjlpdmtfVk1vcEQ4c0lQZVRUMUJfWWE0ZXFPcFd3RTNzV0pGbUYxZjg5UW9PdDNTTjBRLXNaMGpQTkpsSlNxX1lJNm9mTmc0a194LVM1TERKTm1HZ3VETmNoR1U4a0JDRUFpOTV0U1cxZks3UDZINl9uS0NqbnByYVE4QXhTdFl0eGk4MFE2ZllMSTZVdEFjUU1S0gHKAUFVX3lxTFB1TDl2MVRDVjBJLWpWLU13S1NzbUVHdzNRVnlfaFN4c1dBVHZRajQ1S1RYMGN6Z1NwblpGVG9heE96Q1dCcExUeERmT1RiV0ZVbGpkeDdTQ0lQNm1HZXA5WWZBTlFpc0VnZEstejIxZS05OURINXVLeGVNdGVnclgyRkhfdnV4ZDZ5MTZoaVpzSVlXVV9pQzk4aUk3TGlwMzM4bmI0OTBCcUJnaEUyYTZ0NWZzMFVUN2JJU0o5SWd1QjhsZUwwaUlaWnc?oc=5)  Fox News
+  4. [Senate blocks ban on transgender athletes, as Trump pushes forward](https://news.google.com/rss/articles/CBMioAFBVV95cUxOSTFsZzh6Q2JvajJxYS1adkxXSjJpVno3NWM5dThmSGRvcDUwVWVnSmtXSlZtUXlzQ29jTFByVm9PYXJwY3UzMEdRTm5ONzk3dUdkSVlNalV0anJ3cWFOYnphSGhHNDhjem1qSjhUaUlhVnBKbXlxOFFTWTNoRkFfS0REcEZISXZkanpRZjFLTEJvNjFRcWFGNDJockZDWkRO?oc=5)  The Washington Post
+  5. [Donald Trump Handed Major Setback on Transgender Bill](https://news.google.com/rss/articles/CBMipwFBVV95cUxNVW5xZENuQm5LdmpIQVV6Z3p6bEk2WVZuazVHTW0xbWNwVWhJMzRTdnludUNKNXBkZ3ZDT3k4V2VUUTRUZlNvb09lZmRvNHZrS014SV9VdUJUeW01Y2JFWmUtRzJtSU9lNTlDOFUzSzNtRy1rWmtpa2QwVlRxelM3NDVDcGdIX0lvWDFOdl9EQk5rejk2WnBJSU1tdE5sZHlucGZrNElVUQ?oc=5)  Newsweek
+
+

@@ -1,0 +1,17 @@
+---
+title: "Starmer and Macron step up to shape European security as Trump roils relations - The Associated Press"
+date: 2025-03-03
+author: "Unknown"
+categories: ["Uncategorized"]
+tags: []
+featured_image: ""
+description: "Starmer and Macron step up to shape European security as Trump roils relations&nbsp;&nbsp;The Associated PressEuropeans embrace Zelensky after he was vilified b..."
+---
+
+  1. [Starmer and Macron step up to shape European security as Trump roils relations](https://news.google.com/rss/articles/CBMipwFBVV95cUxOX01vUGZMRW4xR1c3Uml5ZmszQWtYOHNjWXRzSmF0OVJWdkxHbDVhSTZoRUtNZjF0bnktWEl6S0djUnFaR3lNaERYaXgyRnRjemRzNVI4V2RPOVRzRF9YaVNLMnEwa2YyU2N3aHFCQXk0T3haM1ZRS3FLODMyVnFpcVIxcVlXMkQ3YWF1V0lTVXV0VXdPVlVPMEJlenZqYzkyWGZaMGRldw?oc=5)  The Associated Press
+  2. [Europeans embrace Zelensky after he was vilified by Trump](https://news.google.com/rss/articles/CBMikAFBVV95cUxPXzF5UUNlMWROMjIwUll4SlNucnZhZkFxSzdQVkkwM2x3WXNOdjVRRmRVZXFFeHFlMUVBbk13RG1jN2MxWDJWNnEwRzFoU3J3QUEzVzd0NkZsUVptT3B2MDFZbU42MUVDRkJJbDhzVTI5Xzl3RFF6WWdQVEtKWS03LVk3TXdLUnVhcDZUeTJhaE_SAYcBQVVfeXFMTUUxQmNiLXFTbDZKLVEzMWpmUVRkeTFyRUpyOUt5MXc5Slhmd3FuNmpPdzRSRy0wdTJ0bDVHVFFRMWRQUmFUOEVNRVRUMmk1d1Q2Z3RrbEFaNjY3N3QtcGlVSXZpRnR0aXVGSW9BVzRFRmtwb0xkeFhaM1JLNUduX1ZmekMtOGlR?oc=5)  CNN
+  3. [UK prime minister lays out Ukraine peace deal framework as Zelenskyy responds to resignation calls](https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZ0c0RjhXbTBHS1J4R3U1dGNUb01FS0pBR1VsYTN3XzFTRk5QWnFvMXlsRXRsemZLeDRJOHROZTUxY3NtdGFMRmpfbTZmUWRaWkc4ekVidjRYd1R4cGo1N3pVVEQ4RC05M0Y3YnZZc3p1SUFURl9Jd3hMRG8xSjl4X0lPTDZMT2NwRE5CQk5Tb2JWNHVuUGkwSk1CLW9zTWdFQ3RvNi1MZHlkNDhaZ2pnNWZjVXpHRTBJNGxSN2g2cy1obGfSAcgBQVVfeXFMTzFkSEFzQTQ2dGVnQldfT0VnN3dGdi1hZkplQklFOUVaUVFqRmtQNGhTRkg4U0FjQlBGbGZmVTBIZ2VQU19wa2ZRQ2VGcTdOcWdXTWljem9NWmRydjJINjVFUFdDek80dnhWYS02X0x0OF8yWXAyTjhjUUkxVUF2UXpiT1F6YXdNdndhZFVIMUxnSE5BUHk4V0xTa2prTlRqWXpWRzg2N0hzU3p2SWoyWVN5eHZKb1ZuUFdPal91RlFqNGZlOGZNU0I?oc=5)  Fox News
+  4. [European Leaders Look for Allies to Secure Ukraine-Russia Peace Deal](https://news.google.com/rss/articles/CBMif0FVX3lxTFB4YlVteWFFazFhODd2QnlKYUI1Wml0Mnh2NVVpNzN1cWhKNDlIWEJlU0dZUGxHVXh3Z2c0WFE4ZDMxR1hGZklQNGRUWGFSXzNBdTUyel80RXFod2lYbWFybGhnZWF1UFZnUkpGSnFDRWhMRUVxemRITEFpalY4UG8?oc=5)  The New York Times
+  5. [UK orders $2 billion worth of air-defense missiles for Ukraine](https://news.google.com/rss/articles/CBMitgFBVV95cUxOVWNXLV9aVU95MkdNS1pNaVFPakQ2eUZub2JQSXFWVFNnZFZkUXpKcUl3b2psUi1oVzh1UzV6bVFjelJlQmVGNVBMY2xaTThXWHVaX1UxSWMzNl9sYkxxek5sQ0RmOTlnVzB3VkJTZ3ZfN0dWbUNWbHB4TmU2bXNPRXdaamJfaENNMW1ESEdFNXp1RTJiX3VJVWc2dTMtdTFyeEh5dEIzV09yZlVqMVEzWnZUaWF1dw?oc=5)  Defense News
+
+
