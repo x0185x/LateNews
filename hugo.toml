@@ -1,13 +1,13 @@
 baseURL = 'https://latenews.netlify.app/'
-languageCode = 'en-US'
-title = 'Late News'
+languageCode = 'en-UK'
+title = 'LateNews'
 theme = 'hugo-news'
 
 [params]
   description = "Latest breaking news and updates from around the world."
   twitterCard = "summary_large_image"
   schemaType = "NewsMediaOrganization"
-  schemaName = "Late News"
+  schemaName = "LateNews"
   schemaUrl = "/"
 
 [taxonomies]
