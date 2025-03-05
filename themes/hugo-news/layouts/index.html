@@ -22,7 +22,7 @@
                         <a href="{{ .RelPermalink }}" class="text-gray-900 hover:text-blue-600">{{ .Title }}</a>
                     </h3>
                     <div class="flex items-center text-sm text-gray-600 mb-3">
-                        <span class="mr-4">By <a href="/authors/{{ replace (lower .Params.author) "." "" | urlize }}" class="text-blue-600 hover:text-blue-800">{{ .Params.author }}</a></span>
+                        <span class="mr-4"><strong>{{ .Params.author }}</strong></span>
                         <span>{{ .Date.Format "Jan 2" }}</span>
                     </div>
                     <p class="text-gray-700 text-sm mb-4">{{ .Description | default (.Summary | truncate 120) }}</p>
@@ -43,62 +43,7 @@
             </a>
             {{ end }}
         </div>
-        <div class="flex justify-center items-center gap-4 mt-6">
-            <button id="prev-categories" class="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
-                ← Previous
-            </button>
-            <span id="category-page-info" class="text-gray-600"></span>
-            <button id="next-categories" class="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
-                Next →
-            </button>
-        </div>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const categoriesPerPage = 8; // 4 columns × 2 rows
-            const categoryItems = document.querySelectorAll('.category-item');
-            const totalPages = Math.ceil(categoryItems.length / categoriesPerPage);
-            let currentPage = 1;
-
-            const prevButton = document.getElementById('prev-categories');
-            const nextButton = document.getElementById('next-categories');
-            const pageInfo = document.getElementById('category-page-info');
-
-            function updateCategories() {
-                categoryItems.forEach((item, index) => {
-                    const startIndex = (currentPage - 1) * categoriesPerPage;
-                    const endIndex = startIndex + categoriesPerPage;
-                    if (index >= startIndex && index < endIndex) {
-                        item.classList.remove('hidden');
-                    } else {
-                        item.classList.add('hidden');
-                    }
-                });
-
-                prevButton.disabled = currentPage === 1;
-                nextButton.disabled = currentPage === totalPages;
-                pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
-            }
-
-            prevButton.addEventListener('click', () => {
-                if (currentPage > 1) {
-                    currentPage--;
-                    updateCategories();
-                }
-            });
-
-            nextButton.addEventListener('click', () => {
-                if (currentPage < totalPages) {
-                    currentPage++;
-                    updateCategories();
-                }
-            });
-
-            // Initial update
-            updateCategories();
-        });
-    </script>
 
     <!-- View All Articles Link -->
     <div class="text-center">
