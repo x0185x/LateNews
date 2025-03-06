@@ -1,0 +1,33 @@
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.92.0"
+
+[params]
+  # Main site parameters
+  siteName = "Your Gumtree Clone"
+  siteDescription = "Buy and sell items, services, and more locally"
+  siteKeywords = "classifieds, marketplace, buy, sell, local"
+  
+  # Social media links
+  facebook = "https://facebook.com/youraccount"
+  twitter = "https://twitter.com/youraccount"
+  instagram = "https://instagram.com/youraccount"
+  
+  # Contact information
+  contactEmail = "contact@yourdomain.com"
+  contactPhone = "+1234567890"
+  
+  # Location settings
+  defaultLocation = "Your Default City"
+  enableLocationSelector = true
+  
+  # Feature toggles
+  enableSearch = true
+  enableCategories = true
+  enableFeaturedAds = true
+  enableUserAccounts = true
+  
+  # UI customization
+  primaryColor = "#37a864"  # Gumtree-like green
+  secondaryColor = "#2e3d58"  # Dark blue
