@@ -12,14 +12,9 @@
                             <div class="col-md-4">
                                 <select class="form-select" aria-label="Select category">
                                     <option selected>All Categories</option>
-                                    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-                                    <option value="{{ $name | urlize }}">{{ $name }}</option>
-                                    {{ else }}
-                                    <option value="vehicles">Vehicles</option>
-                                    <option value="property">Property</option>
-                                    <option value="jobs">Jobs</option>
-                                    <option value="services">Services</option>
-                                    <option value="for-sale">For Sale</option>
+                                    <!-- Use .Site.Params.defaultCategories for initial setup -->
+                                    {{ range .Site.Params.defaultCategories }}
+                                    <option value="{{ . | urlize }}">{{ . }}</option>
                                     {{ end }}
                                 </select>
                             </div>
@@ -45,32 +40,20 @@
                 <h2 class="section-title">Popular Categories</h2>
             </div>
             <div class="row g-4">
-                {{ range $name, $taxonomy := first 8 .Site.Taxonomies.categories }}
+                <!-- Use .Site.Params.defaultCategories instead of taxonomies for initial setup -->
+                {{ range .Site.Params.defaultCategories | first 8 }}
                 <div class="col-6 col-md-3">
-                    <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}" class="text-decoration-none">
+                    <a href="/categories/{{ . | urlize }}" class="text-decoration-none">
                         <div class="category-card bg-white rounded shadow-sm p-3 text-center h-100">
                             <div class="icon-placeholder mb-3">
-                                <i class="fas fa-tag fa-2x text-muted"></i>
+                                {{ $icon := index $.Site.Params.categoryIcons . | default "tag" }}
+                                <i class="fas fa-{{ $icon }} fa-2x text-muted"></i>
                             </div>
-                            <h5 class="category-name">{{ $name }}</h5>
-                            <span class="badge bg-secondary">{{ len $taxonomy }} listings</span>
+                            <h5 class="category-name">{{ . }}</h5>
+                            <span class="badge bg-secondary">0 listings</span>
                         </div>
                     </a>
                 </div>
-                {{ else }}
-                <!-- Fallback categories -->
-                <div class="col-6 col-md-3">
-                    <a href="#" class="text-decoration-none">
-                        <div class="category-card bg-white rounded shadow-sm p-3 text-center h-100">
-                            <div class="icon-placeholder mb-3">
-                                <i class="fas fa-car fa-2x text-muted"></i>
-                            </div>
-                            <h5 class="category-name">Vehicles</h5>
-                            <span class="badge bg-secondary">1,245 listings</span>
-                        </div>
-                    </a>
-                </div>
-                <!-- Add more fallback categories as needed -->
                 {{ end }}
             </div>
         </div>
@@ -84,7 +67,9 @@
                 <a href="#" class="btn btn-outline-primary">View All</a>
             </div>
             <div class="row g-4">
-                {{ range first 8 (where .Site.RegularPages "Type" "listing") }}
+                {{ $listings := where .Site.RegularPages "Type" "listing" }}
+                {{ $featuredListings := where $listings "Params.featured" true }}
+                {{ range first 8 $featuredListings }}
                 <div class="col-md-6 col-lg-3">
                     <div class="listing-card bg-white rounded shadow-sm h-100">
                         <div class="card-img-top position-relative">
@@ -96,7 +81,7 @@
                             <span class="badge bg-primary position-absolute top-0 end-0 m-2">Featured</span>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">{{ .Title }}</h5>
+                            <h5 class="card-title"><a href="{{ .Permalink }}" class="text-decoration-none">{{ .Title }}</a></h5>
                             <p class="text-muted small mb-2">
                                 <i class="fas fa-map-marker-alt me-1"></i> {{ .Params.location | default "Location" }}
                             </p>
