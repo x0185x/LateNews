@@ -1,32 +1,13 @@
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.92.0"
+
 [params]
   # Main site parameters
   siteName = "Your Gumtree Clone"
   siteDescription = "Buy and sell items, services, and more locally"
   siteKeywords = "classifieds, marketplace, buy, sell, local"
-  
-  # Default categories (for initial setup)
-  defaultCategories = [
-    "Vehicles",
-    "Property",
-    "Jobs",
-    "Services",
-    "Electronics",
-    "Furniture",
-    "Fashion",
-    "Pets"
-  ]
-  
-  # Category icons (Font Awesome icons without the "fa-" prefix)
-  categoryIcons = {
-    "Vehicles" = "car",
-    "Property" = "home",
-    "Jobs" = "briefcase",
-    "Services" = "tools",
-    "Electronics" = "laptop",
-    "Furniture" = "couch",
-    "Fashion" = "tshirt",
-    "Pets" = "paw"
-  }
   
   # Social media links
   facebook = "https://facebook.com/youraccount"
