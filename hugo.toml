@@ -1,8 +1,8 @@
 # Basic site configuration
-baseURL = "https://saqoah.github.io/"  # Replace with your actual URL
+baseURL = "https://latenews.netlify.app/"  # Replace with your actual URL
 languageCode = "en-us"
 title = "Gumtree Clone Marketplace"
-theme = "gumtree-clone"
+theme = "hugo-news"
 paginate = 12
 enableRobotsTXT = true
 enableGitInfo = true
