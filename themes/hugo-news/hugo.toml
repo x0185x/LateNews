@@ -1,5 +1,5 @@
 # Basic site configuration
-baseURL = "https://saqoah.github.io/"  # Replace with your actual URL
+baseURL = "/"  # Replace with your actual URL
 languageCode = "en-us"
 title = "Gumtree Clone Marketplace"
 theme = "gumtree-clone"
