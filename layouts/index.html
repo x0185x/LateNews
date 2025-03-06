@@ -1,0 +1,115 @@
+{{ define "main" }}
+    <!-- Hero Section with Search -->
+    <section class="hero-section bg-light py-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 mb-4">Find Anything Near You</h1>
+                    <p class="lead mb-5">Browse thousands of classifieds for jobs, properties, services, and more</p>
+                    
+                    <div class="search-box bg-white p-4 rounded shadow">
+                        <form action="#" method="get" class="row g-3">
+                            <div class="col-md-4">
+                                <select class="form-select" aria-label="Select category">
+                                    <option selected>All Categories</option>
+                                    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                                    <option value="{{ $name | urlize }}">{{ $name }}</option>
+                                    {{ else }}
+                                    <option value="vehicles">Vehicles</option>
+                                    <option value="property">Property</option>
+                                    <option value="jobs">Jobs</option>
+                                    <option value="services">Services</option>
+                                    <option value="for-sale">For Sale</option>
+                                    {{ end }}
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="What are you looking for?">
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-primary w-100" style="background-color: {{ .Site.Params.primaryColor }}; border-color: {{ .Site.Params.primaryColor }};">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Popular Categories -->
+    <section class="popular-categories mb-5">
+        <div class="container">
+            <div class="section-header mb-4">
+                <h2 class="section-title">Popular Categories</h2>
+            </div>
+            <div class="row g-4">
+                {{ range $name, $taxonomy := first 8 .Site.Taxonomies.categories }}
+                <div class="col-6 col-md-3">
+                    <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}" class="text-decoration-none">
+                        <div class="category-card bg-white rounded shadow-sm p-3 text-center h-100">
+                            <div class="icon-placeholder mb-3">
+                                <i class="fas fa-tag fa-2x text-muted"></i>
+                            </div>
+                            <h5 class="category-name">{{ $name }}</h5>
+                            <span class="badge bg-secondary">{{ len $taxonomy }} listings</span>
+                        </div>
+                    </a>
+                </div>
+                {{ else }}
+                <!-- Fallback categories -->
+                <div class="col-6 col-md-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="category-card bg-white rounded shadow-sm p-3 text-center h-100">
+                            <div class="icon-placeholder mb-3">
+                                <i class="fas fa-car fa-2x text-muted"></i>
+                            </div>
+                            <h5 class="category-name">Vehicles</h5>
+                            <span class="badge bg-secondary">1,245 listings</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Add more fallback categories as needed -->
+                {{ end }}
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Listings -->
+    <section class="featured-listings mb-5">
+        <div class="container">
+            <div class="section-header d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title">Featured Listings</h2>
+                <a href="#" class="btn btn-outline-primary">View All</a>
+            </div>
+            <div class="row g-4">
+                {{ range first 8 (where .Site.RegularPages "Type" "listing") }}
+                <div class="col-md-6 col-lg-3">
+                    <div class="listing-card bg-white rounded shadow-sm h-100">
+                        <div class="card-img-top position-relative">
+                            {{ with .Params.images }}
+                            <img src="{{ index . 0 }}" class="img-fluid rounded-top" alt="{{ $.Title }}">
+                            {{ else }}
+                            <img src="https://via.placeholder.com/300x200" class="img-fluid rounded-top" alt="Placeholder">
+                            {{ end }}
+                            <span class="badge bg-primary position-absolute top-0 end-0 m-2">Featured</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">{{ .Title }}</h5>
+                            <p class="text-muted small mb-2">
+                                <i class="fas fa-map-marker-alt me-1"></i> {{ .Params.location | default "Location" }}
+                            </p>
+                            <p class="card-text">{{ .Summary | truncate 80 }}</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price text-primary fw-bold">{{ .Params.price | default "$0" }}</span>
+                                <small class="text-muted">{{ .Date.Format "Jan 02, 2006" }}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+{{ end }}
