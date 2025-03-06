@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Top Bar */
+.top-bar {
+    font-size: 0.9rem;
+}
+
+.location-selector {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Post Ad Button */
+.post-ad-button-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+/* Category Cards */
+.category-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Listing Cards */
+.listing-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.listing-card:hover {
+    transform: translateY(-5px);
+}
+
+.listing-card .card-img-top img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.search-box {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+/* Footer */
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.social-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .post-ad-button-container {
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+    .hero-section {
+        padding: 2rem 0 !important;
+    }
+}
