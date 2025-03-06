@@ -1,0 +1,29 @@
+baseURL = '/'
+languageCode = 'en-US'
+title = 'Late News'
+theme = 'hugo-news'
+
+[params]
+  description = "Latest breaking news and updates from around the world."
+  twitterCard = "summary_large_image"
+  schemaType = "NewsMediaOrganization"
+  schemaName = "Late News"
+  schemaUrl = "/"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  author = "authors"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[[menus.main]]
+name = "Home"
+url = "/"
+weight = 10
+
+[[menus.main]]
+name = "Categories"
+url = "/categories"
+weight = 20
