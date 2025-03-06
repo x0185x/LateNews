@@ -1,36 +1,117 @@
-<header class="site-header">
-    <div class="header-content">
-        <h1 class="site-title">{{ site.Title }}</h1>
-        <div class="header-right">
-            {{ partial "search-box.html" . }}
-            {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<header>
+    <!-- Top Bar -->
+    <div class="top-bar bg-light py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="location-selector">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="current-location">{{ .Site.Params.defaultLocation }}</span>
+                        {{ if .Site.Params.enableLocationSelector }}
+                        <button class="btn btn-sm btn-link p-0" data-bs-toggle="modal" data-bs-target="#locationModal">
+                            Change
+                        </button>
+                        {{ end }}
+                    </div>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="user-actions">
+                        <a href="#" class="me-3"><i class="fas fa-heart me-1"></i> Favorites</a>
+                        <a href="#" class="me-3"><i class="fas fa-user me-1"></i> My Account</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary">Login / Register</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: {{ .Site.Params.primaryColor }};">
+        <div class="container">
+            <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
+                {{ .Site.Params.siteName }}
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{{ .Site.Home.RelPermalink }}">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                            <li><a class="dropdown-item" href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li>
+                            {{ end }}
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Featured Ads</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                {{ if .Site.Params.enableSearch }}
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search listings..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                {{ end }}
+            </div>
+        </div>
+    </nav>
+
+    <!-- Post Ad Button (fixed) -->
+    <div class="post-ad-button-container">
+        <a href="#" class="btn btn-lg" style="background-color: {{ .Site.Params.secondaryColor }}; color: white;">
+            <i class="fas fa-plus-circle me-2"></i> Post Ad
+        </a>
+    </div>
+
+    <!-- Location Modal -->
+    {{ if .Site.Params.enableLocationSelector }}
+    <div class="modal fade" id="locationModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Choose Your Location</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="locationSearch" class="form-label">Search for your city</label>
+                        <input type="text" class="form-control" id="locationSearch" placeholder="Enter city name">
+                    </div>
+                    <div class="popular-locations mt-4">
+                        <h6>Popular Locations</h6>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="location-item">New York</a></li>
+                                    <li><a href="#" class="location-item">Los Angeles</a></li>
+                                    <li><a href="#" class="location-item">Chicago</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="location-item">Houston</a></li>
+                                    <li><a href="#" class="location-item">Phoenix</a></li>
+                                    <li><a href="#" class="location-item">Philadelphia</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ end }}
 </header>
-
-<style>
-.site-header {
-    padding: 1rem;
-    background: #fff;
-    border-bottom: 1px solid #eee;
-}
-
-.header-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.site-title {
-    margin: 0;
-    font-size: 1.5rem;
-}
-
-.header-right {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-</style>

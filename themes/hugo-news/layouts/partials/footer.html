@@ -1,1 +1,85 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+<footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+        <div class="row">
+            <!-- About -->
+            <div class="col-md-3 mb-4">
+                <h5>{{ .Site.Params.siteName }}</h5>
+                <p class="text-muted small">{{ .Site.Params.siteDescription }}</p>
+                <div class="social-links mt-3">
+                    {{ with .Site.Params.facebook }}
+                    <a href="{{ . }}" class="me-2 text-white"><i class="fab fa-facebook-f"></i></a>
+                    {{ end }}
+                    {{ with .Site.Params.twitter }}
+                    <a href="{{ . }}" class="me-2 text-white"><i class="fab fa-twitter"></i></a>
+                    {{ end }}
+                    {{ with .Site.Params.instagram }}
+                    <a href="{{ . }}" class="me-2 text-white"><i class="fab fa-instagram"></i></a>
+                    {{ end }}
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="col-md-3 mb-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-muted">About Us</a></li>
+                    <li><a href="#" class="text-muted">Contact Us</a></li>
+                    <li><a href="#" class="text-muted">Terms & Conditions</a></li>
+                    <li><a href="#" class="text-muted">Privacy Policy</a></li>
+                    <li><a href="#" class="text-muted">Help & Support</a></li>
+                </ul>
+            </div>
+            
+            <!-- Categories -->
+            <div class="col-md-3 mb-4">
+                <h5>Categories</h5>
+                <ul class="list-unstyled">
+                    {{ range first 5 .Site.Taxonomies.categories.Alphabetical }}
+                    <li><a href="{{ .Page.Permalink }}" class="text-muted">{{ .Page.Title }}</a></li>
+                    {{ else }}
+                    <li><a href="#" class="text-muted">Vehicles</a></li>
+                    <li><a href="#" class="text-muted">Property</a></li>
+                    <li><a href="#" class="text-muted">Jobs</a></li>
+                    <li><a href="#" class="text-muted">Services</a></li>
+                    <li><a href="#" class="text-muted">For Sale</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="col-md-3 mb-4">
+                <h5>Contact Us</h5>
+                <address class="text-muted">
+                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Street Name, City, Country</p>
+                    {{ with .Site.Params.contactPhone }}
+                    <p class="mb-2"><i class="fas fa-phone me-2"></i> {{ . }}</p>
+                    {{ end }}
+                    {{ with .Site.Params.contactEmail }}
+                    <p class="mb-2"><i class="fas fa-envelope me-2"></i> {{ . }}</p>
+                    {{ end }}
+                </address>
+            </div>
+        </div>
+        
+        <hr class="mt-4 mb-4 border-secondary">
+        
+        <!-- Bottom footer -->
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="small text-muted mb-0">
+                    &copy; {{ now.Format "2006" }} {{ .Site.Params.siteName }}. All rights reserved.
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <div class="app-badges">
+                    <a href="#" class="me-2">
+                        <img src="https://via.placeholder.com/120x40" alt="App Store" height="30">
+                    </a>
+                    <a href="#">
+                        <img src="https://via.placeholder.com/120x40" alt="Google Play" height="30">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
