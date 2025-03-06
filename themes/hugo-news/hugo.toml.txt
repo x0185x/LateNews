@@ -1,0 +1,194 @@
+# Basic site configuration
+baseURL = "https://saqoah.github.io/"  # Replace with your actual URL
+languageCode = "en-us"
+title = "Gumtree Clone Marketplace"
+theme = "gumtree-clone"
+paginate = 12
+enableRobotsTXT = true
+enableGitInfo = true
+
+# Site build settings
+[build]
+  writeStats = true
+
+# Module configuration
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.92.0"
+
+# Site parameters
+[params]
+  # Main site information
+  siteName = "Gumtree Clone"
+  siteDescription = "Buy and sell items, services, and more locally"
+  siteKeywords = "classifieds, marketplace, buy, sell, local"
+  
+  # Site metadata
+  author = "saqoah"
+  authorWebsite = "https://github.com/saqoah"
+  copyright = "© 2025 Gumtree Clone. All rights reserved."
+  lastUpdated = "2025-03-06 01:11:31"
+  
+  # Default categories (for initial setup)
+  defaultCategories = [
+    "Vehicles",
+    "Property",
+    "Jobs",
+    "Services",
+    "Electronics",
+    "Furniture",
+    "Fashion",
+    "Pets"
+  ]
+  
+  # Category icons (Font Awesome icons without the "fa-" prefix)
+  categoryIcons = {
+    "Vehicles" = "car",
+    "Property" = "home",
+    "Jobs" = "briefcase",
+    "Services" = "tools",
+    "Electronics" = "laptop",
+    "Furniture" = "couch",
+    "Fashion" = "tshirt",
+    "Pets" = "paw"
+  }
+  
+  # Social media links
+  facebook = "https://facebook.com/saqoah"
+  twitter = "https://twitter.com/saqoah"
+  instagram = "https://instagram.com/saqoah"
+  github = "https://github.com/saqoah"
+  
+  # Contact information
+  contactEmail = "contact@yourdomain.com"
+  contactPhone = "+1234567890"
+  
+  # Location settings
+  defaultLocation = "New York City"
+  enableLocationSelector = true
+  
+  # Feature toggles
+  enableSearch = true
+  enableCategories = true
+  enableFeaturedAds = true
+  enableUserAccounts = true
+  
+  # UI customization
+  primaryColor = "#37a864"    # Gumtree-like green
+  secondaryColor = "#2e3d58"  # Dark blue
+  accentColor = "#ff6b6b"     # Accent color for highlights
+  
+  # Image settings
+  defaultImage = "images/default-listing.jpg"
+  logo = "images/logo.png"
+  favicon = "images/favicon.ico"
+
+# Taxonomies configuration
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  location = "locations"
+
+# Menu configuration
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 2
+  [[menu.main]]
+    name = "Featured"
+    url = "/featured/"
+    weight = 3
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 5
+
+# Privacy configuration
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = false
+    respectDoNotTrack = true
+  [privacy.instagram]
+    disable = false
+    simple = true
+  [privacy.twitter]
+    disable = false
+    enableDNT = true
+    simple = true
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true
+
+# Markup configuration
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "monokai"
+
+# Outputs configuration
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+# RSS feed configuration
+[services.rss]
+  limit = 20
+
+# Image processing configuration
+[imaging]
+  anchor = "Smart"
+  bgColor = "#ffffff"
+  quality = 75
+  resampleFilter = "Lanczos"
+
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = ""
+    excludeFields = ""
+
+# Security headers
+[server]
+  [[server.headers]]
+    for = "/**"
+    [server.headers.values]
+      X-Frame-Options = "DENY"
+      X-Content-Type-Options = "nosniff"
+      X-XSS-Protection = "1; mode=block"
+      Referrer-Policy = "strict-origin-when-cross-origin"
+      Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' cdn.jsdelivr.net cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' cdn.jsdelivr.net cdnjs.cloudflare.com; img-src 'self' data: https:; font-src 'self' cdn.jsdelivr.net cdnjs.cloudflare.com;"
+
+# Related content configuration
+[related]
+  threshold = 80
+  includeNewer = true
+  toLower = false
+  [[related.indices]]
+    name = "categories"
+    weight = 100
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+  [[related.indices]]
+    name = "date"
+    weight = 10
