@@ -1,0 +1,37 @@
+on:  
+  workflow_dispatch:  # Allows manual execution
+
+permissions:
+  contents: write  # Required to delete tags/releases
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all tags
+
+      - name: Delete local tags
+        run: |
+          git tag -d $(git tag -l) || echo "No local tags to delete"
+
+      - name: Delete remote tags
+        run: |
+          git ls-remote --tags origin | awk '{print $2}' | sed 's/refs\/tags\///' | xargs -I {} git push --delete origin {} || echo "No remote tags to delete"
+
+      - name: Delete GitHub Releases
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          releases=$(gh release list --limit 100 --json name --jq '.[].name')
+          if [[ -z "$releases" ]]; then
+            echo "No releases found. Skipping deletion."
+          else
+            echo "Deleting releases..."
+            for release in $releases; do
+              echo "Deleting release: $release"
+              gh release delete "$release" --yes || echo "Failed to delete release $release (maybe already deleted)"
+            done
+          fi

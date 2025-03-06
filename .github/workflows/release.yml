@@ -1,0 +1,64 @@
+on:  
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write  # Explicitly set write permissions
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ github.token }}
+
+      - name: Setup Git
+        run: |
+          git config --local user.name "GitHub Actions"
+          git config --local user.email "actions@github.com"
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true  # Required for Tailwind CSS
+
+      - name: Clean and Build Hugo Site
+        run: |
+          rm -rf public/  # Ensure old files are deleted
+          hugo --cleanDestinationDir --minify  # Force full rebuild
+
+      - name: Commit Rebuilt Site
+        run: |
+          git add public/
+          git commit -m "Rebuild Hugo site ${{ github.run_number }}" || echo "No changes to commit"
+          git push origin main
+
+      - name: Create ZIP file
+        run: |
+          zip -r site.zip public/
+
+      - name: Create Release and Upload Asset
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          # Create release notes
+          cat > release_notes.txt << EOF
+          Updated Late News Hugo site release
+          Triggered by push to main on: ${{ github.event.head_commit.timestamp }}
+          Commit: ${{ github.sha }}
+          Ready for Netlify deployment
+          Created at: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          EOF
+
+          # Create release and upload asset
+          gh release create "v1.0.0-${{ github.run_number }}" \
+            --title "Late News Site Update ${{ github.run_number }}" \
+            --notes-file release_notes.txt \
+           
+site.zip
